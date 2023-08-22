@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Угадай число</string>
+    <string name="button">Button</string>
+    <string name="balance">0</string>
+    <string name="text_balance">Баланс:</string>
+    <string name="game_1">Угадай число</string>
+    <string name="game_2">Быки и коровы</string>
+    <string name="game_3">Словомеска</string>
+    <string name="hint1">Введите число от 1 до 100</string>
+    <string name="more">&gt; X &gt;</string>
+    <string name="check">Проверить</string>
+    <string name="n1">1</string>
+    <string name="n2">2</string>
+    <string name="n3">3</string>
+    <string name="n4">4</string>
+    <string name="n5">5</string>
+    <string name="n6">6</string>
+    <string name="n7">7</string>
+    <string name="n8">8</string>
+    <string name="n9">9</string>
+    <string name="n0">0</string>
+    <string name="info_game1_text">В данной игре нужно угадать число X.\nОно находится в пределах от 1 до 100.\nЕсли ваше число находится справа, то оно меньше загаданного числа X.\nЕсли ваше число находится слева, то оно больше загаданного числа X.</string>
+    <string name="info_game2_text">Цель игры:
+В данной игре ваша задача - угадать загаданное компьютером четырёхзначное число.
+
+\nДиапазон цифр:
+Каждая цифра в загаданном числе находится в диапазоне от 0 до 9.</string>
+    <string name="by_game2_text1">Хотите купить уровень?</string>
+    <string name="by_game2_text2">Стоимость покупки </string>
+    <string name="by_game2_text3"> монет</string>
+
+</resources>

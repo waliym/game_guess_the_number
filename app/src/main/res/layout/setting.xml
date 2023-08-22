@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/purple"
+            >
+            <TextView
+                android:id="@+id/setting_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Настройки"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <TextView
+                android:id="@+id/setting_text2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="фон"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/setting_text1"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bg_color1"
+                app:cornerRadius="8dp"
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/bg"
+                android:onClick="stand_bg"
+
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/setting_text2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/bg_color2"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bg_color2"
+                app:cornerRadius="8dp"
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/lime"
+                android:onClick="lime_bg"
+
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/setting_text2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bg_color3"
+                app:cornerRadius="8dp"
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/dark"
+                android:onClick="dark_bg"
+
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/setting_text2"
+                app:layout_constraintStart_toStartOf="@id/bg_color2"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_setting_close"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="15dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@mipmap/crose_foreground"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/setting_text1"
+                 />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/bg"
+                android:text="Сбросить настройки"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:onClick="clear"
+                app:layout_constraintTop_toBottomOf="@id/bg_color2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
